@@ -1,44 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Sanjeev Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css">
-  </head>
 
-  <body>
-    <div id="header">
-      <div class="container">
-        <nav>
-          <img src="images/logo.jpg" class="logo">
-          <ul>
-            <li><a href="#">home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">contact</a></li>
-          </ul>
-        </nav>
-        <div class="header-text">
-          <p>Java Full Stack Developer</p>
-          <h1>Hi, I'm <span>Sanjeev</span><br></h1>
+<head>
+  <title>Sanjeev Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/c49156dd2a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/cover1.png" class="logo">
+        <ul id="sideMenu">
+          <li><a href="#header">home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Java Full Stack Developer</p>
+        <h1>Hi, I'm <span>Sanjeev</span><br></h1>
+      </div>
+    </div>
+  </div>
+  <!------------About Section code-------------------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+
+        <div class="about-col-1">
+          <img src="images/user2.jpg">
+        </div>
+
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p class="about-me">"I am an organized and self-motivated employee able
+            to apply time management and organizational skills within the
+            assigned division of your company. Seeking to join your
+            organization as Java Full-Stack Developer to help ensure that
+            my meticulous knowledge in organization will be useful in
+            this exciting and challenging industry."</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('internships')">Internships</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          <div class="tab-contents  active-tab" id="skills">
+            <ul>
+              <li><span>Web Development</span><br> Web app development</li>
+              <li><span>App Development</span><br> Building Android/ios apps</li>
+              <li><span>Windows Builder</span><br>Building Desktop Application</li>
+              <li><span>Databse</span><br> Database management</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="internships">
+            <ul>
+              <li><span>Jan 2023-July 2023</span><br>Full Stack Developer Intern at KodNest Technologies Bengaluru.</li>
+              <li><span>March 2022-May 2022</span><br>Java/J2EE Intern at Wipro Limited</li>
+              <li><span>Aug 2021-Sept 2021</span><br>AIML Internship at Tequed Labs Bengaluru.</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Aug 2018-July 2022</span><br>BE in E&C from Viseveraya Technological University Belagavi</li>
+              <li><span>June 2016-March 2018</span><br>PUC Science from Chetana PU Science College Vijayapur.</li>
+              <li><span>June 2015-April 2016</span><br>SSLC from JnanaJyoti English Medium Hogh School Arakeri.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!------------------- Services -------------------->
+
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>Creating the design and layout of a website or web and also plan,
+            create and code internet sites and web pages, many of which combine
+            text with sounds, pictures, graphics and video clips.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop-simple"></i>
+          <h2>Software Development</h2>
+          <p> Designing, creating, testing,deploying and maintaining different software applications.
+            and also ensure applications align with organizational goals as well ascustomer needs. </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>App Development</h2>
+          <p>Build and maintain web and mobile applications for your organization and
+            also ensure applications align with organizational goals as well as
+            customer needs.</p>
+          <a href="#">Learn more</a>
         </div>
       </div>
     </div>
-    <!------------About Section code-------------------->
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="images/user.png">
+  </div>
+
+  <!--------------Portfolio-------------------->
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+
+          <div class="work">
+            <img src="images/work-5.jpg">
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>Socialbook is a website which allows users, who sign-up for free profiles, to connect with 
+                friends, work colleagues or people they don't know, online. </p>
+                <a href="https://github.com/sanjeevgaddi/facebook-clone-.git"><i class="fa-brands fa-github"></i></a>
+                <a href="https://sanjeevfb.netlify.app"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
           </div>
-          <div class="about-col-2">
-            <h1>About Me</h1>
+
+          <div class="work">
+            <img src="images/work-6.jpg">
+            <div class="layer">
+              <h3>Videos App</h3>
+              <p>VidTube is a free video sharing website that makes it easy to watch online videos. 
+                You can even create and upload your own videos to share with others.  </p>
+                <a href="https://github.com/sanjeevgaddi/YouTube-Clone.git"><i class="fa-brands fa-github"></i></a>
+                <a href="https://sanjeevyoutube.netlify.app"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
           </div>
+
+          <div class="work">
+            <img src="images/work-7.jpg">
+            <div class="layer">
+              <h3>Hospitality App</h3>
+              <p> Staybnb is an online platform that allows property owners to list their place as 
+                holiday accommodation and allows travellers to find a place to stay while they are away from home. </p>
+                <a href="https://github.com/sanjeevgaddi/Airbnb.git"><i class="fa-brands fa-github"></i></a>
+                <a href="https://sanjeevairbnb.netlify.app"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="work-list">
+
+          <div class="work">
+            <img src="images/work-4.jpg">
+            <div class="layer">
+              <h3>Streaming Service App</h3>
+              <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies,
+                 anime, documentaries, and more on thousands of internet-connected devices.</p>
+                 <a href="https://github.com/sanjeevgaddi/Netflix.git"><i class="fa-brands fa-github"></i></a>
+                <a href="https://sanjeevnetflix.netlify.app"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work-8.png">
+            <div class="layer">
+              <h3>Professional Network App</h3>
+              <p>LinkedIn is used to find the right job or internship, connect and strengthen professional 
+                relationships, and learn the skills you need to succeed in your career.  </p>
+                <a href="https://github.com/sanjeevgaddi/LinkedIn-clone.git"><i class="fa-brands fa-github"></i></a>
+                <a href="https://sanjeevlinkedin.netlify.app"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work-3.png">
+            <div class="layer">
+              <h3>Personal Portfolio</h3>
+              <p>Portfolio is used to showcase a skill set for a prospective role and a relevant overview of 
+                qualifications and experience and evidence.</p>
+                <a href="https://github.com/sanjeevgaddi/Sanjeev_Portfolio.git"><i class="fa-brands fa-github"></i></a>
+                <a href="https://sanjeevportfolio.netlify.app"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+        <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+  <!--------------Contact---------------------->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i>sanjeevgaddi7@gmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i>9113212200</p>
+          <div class="social-icons">
+            <a href="https://github.com/sanjeevgaddi"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sanjeevs10/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/sanjeevgaddi"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/sanjeevgaddi"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+          <a href="images/sanjeevgaddi(CV).pdf" download class="btn btn2">Download CV</a>
+        </div>
+
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
         </div>
       </div>
     </div>
-  </body>
+    <div class="copyright">
+      <p>copyright &copy; Sanjeev V Gaddi. 2023</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
 </html>
